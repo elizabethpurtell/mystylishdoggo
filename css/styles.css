@@ -30,16 +30,15 @@ aside {
   align-content: flex-start;
 }
 
+#hdlogo > img {
+  max-width: 30px;
+  align-content: left;
+}
+
 #headerNav {
   display: flex;
   padding: auto;
   align-content: center;
-}
-
-#hdlogo {
-  max-width: 30%;
-  display: inline;
-  align-content: right;
 }
 
 #headerNav nav ul {
@@ -72,7 +71,6 @@ aside {
   padding-top: 10px;
   padding-bottom: 60px;
 }
-
 
 #circles {
   display: flex;
