@@ -5,27 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
     <title>My Stylish Doggo</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
-    <container>
-        <header>
-            <img src="/css/images/MyStylishDOGGO-logo.png" alt="LOGO" height="80px" width="80px"/>
 
-            <nav id="headerNav">
-                <a class="active" href="#home">Home</a>                    
-                <a href="#">Help</a>
-                <a href="#">Sign-In</a>             
-                <a href="#">cart</a>
-            </nav>
-        </header>
+    <header>
+        <aside>
+            <img src="/css/images/MyStylishDOGGO-logo.png" id="hdlogo" alt="LOGO">
+        </aside>
+        <nav id="headerNav">
+            <ul id="nav ul">
+                <li><a class="active" href="#home">HOME</a></li>
+                <li><a href="#">HELP</a></li>
+                <li><a href="#">SIGN-IN</a></li>
+                <li><a href="#">CART</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <main>
+    <main role="main">
         <section id="staticImage">
-            <img src="/images/mystylishdoggo_staticshopimage.jpg" alt="pic desc" />
+            <img src="css/images/mystylishdoggo_staticshopimage.jpg" alt="3 dogs in outfits">
         </section>
+
         <section id="circles">
             <img src="link to circle image" alt="circle1" />
             <h4>Leashes</h4>
@@ -42,6 +46,7 @@
             <img src="link to image" alt="" />
             <h4>Filter & Sort</h4>
         </section>
+
         <section id="infoCards">
             <img src="link to card image" alt="card1" />
             <dl>
@@ -50,13 +55,15 @@
                 <dd>Price:</dd>
             </dl>
             <img src="link to card image" alt="card2" />
+ 
             <dl>
                 <dt>Grey T-shirt</dt>
                 <dd>Size:</dd>
                 <dd>Price:</dd>
             </dl>
             <img src="link to card image" alt="card3" />
-
+        </section>
+        <section id="infoCards2">  
             <dl>
                 <dt>Cute Neck Tie</dt>
                 <dd>Size:</dd>
@@ -82,29 +89,19 @@
                 <dd>Price:</dd>
             </dl>
         </section>
-    </main>
 
-    <section id="footer">
-        <footer>
-            <nav id="footerNav">
-                <img src="/css/images/MyStylishDOGGO-logo.png" alt="footLOGO" />
-
-        <ul>
-            <li><a href=”home page link to”</a></li>
-            <li><a href=”about page link to”</a></li>
-            <li><a href=”contact page link to”</a></li>
-        </ul>
-
-        <a class="active" href="#home">Home</a>
-        <input type="text" placeholder="Search..">
-        <img src="link to IG image" alt="instagram" />
-    </section>
-    <section>
+</main>
+<footer>
+        <nav id="footerNav">
+                 <ul>
+                    <li><a href=”#”>Home</a></li>
+                    <li><a href=”#”>About</a></li>
+                    <li><a href=”#”>Contact</a></li>
+                </ul>
+            </nav>
         <p>&copy; 2023 My Stylish Doggo</p>
-        </nav>
-    </section>
-    </footer>
-    </container>
+</footer>
+
 </body>
 
 </html>
