@@ -81,16 +81,23 @@ nav a {
   padding: bottom 20px top 20px;
 }
 
-#circles {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 #filter {
   display: flex;
   align-content: right;
 }
+
+#circles {
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: bottom 20px top 20px;
+}
+#circles.img {
+  max-width: 100%;
+}
+
+
 
 #infocards {
   display: flex;
