@@ -1,111 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>My Stylish Doggo</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <img src="link to image" alt="LOGO" />
-            <a class="active" href="#home">Home</a>
-            <input type="text" placeholder="Search..">
-            <div class="dropdown">
-                <button class="dropbtn">Dropdown
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">Help</a>
-                    <a href="#">Sign-In</a>
-                </div>
-            </div>
-            <a href="#">cart</a>
-        </nav>
-    </header>
-<main>
-    <section>
-        <img src="/images/msd_site/images/mystylishdoggo_staticshopimage.jpg" alt="pic desc" />
-    </section>
-    <section>
-        <img src="link to circle image" alt="circle1" />
-        <h4>Leashes</h4>
-        <img src="link to circle image" alt="circle2" />
-        <h4>T-Shirts</h4>
-        <img src="link to circle image" alt="circle3" />
-        <h4>Hoodies</h4>
-        <img src="link to circle image" alt="circle4" />
-        <h4>Onesies</h4>
-        <img src="link to circle image" alt="circle5" />
-        <h4>Socks</h4>
-    </section>
-    <section>
-        <img src="link to image" alt="" />
-        <h4>Filter & Sort</h4>
-    </section>
-    <section>
-        <img src="link to card image" alt="card1" />
-        <dl>
-            <dt>Pink Camo Hoody</dt>
-            <dd>Size:</dd>
-            <dd>Price:</dd>
-        </dl>
-        <img src="link to card image" alt="card2" />
-        <dl>
-            <dt>Grey T-shirt</dt>
-            <dd>Size:</dd>
-            <dd>Price:</dd>
-        </dl>
-        <img src="link to card image" alt="card3" />
-    
-        <dl>
-            <dt>Cute Neck Tie</dt>
-            <dd>Size:</dd>
-            <dd>Price:</dd>
-        </dl>
-        <img src="link to card image" alt="card4" />
-    
-        <dl>
-            <dt>Cute Neck Tie</dt>
-            <dd>Size:</dd>
-            <dd>Price:</dd>
-        </dl>
-        <img src="link to card image" alt="card5" />
-        <dl>
-            <dt>Cute Neck Tie</dt>
-            <dd>Size:</dd>
-            <dd>Price:</dd>
-        </dl>
-        <img src="link to card image" alt="card6" />
-        <dl>
-            <dt>Cute Neck Tie</dt>
-            <dd>Size:</dd>
-            <dd>Price:</dd>
-        </dl>
-    </section>
-</main>
-<footer>
-    <section>
-        <img src="link to image" alt="LOGO" />
-    </section>
-    <section>
+    <container>
+        <header>
+            <img src="/css/images/MyStylishDOGGO-logo.png" alt="LOGO" height="80px" width="80px"/>
+
+            <nav id="headerNav">
+                <a class="active" href="#home">Home</a>                    
+                <a href="#">Help</a>
+                <a href="#">Sign-In</a>             
+                <a href="#">cart</a>
+            </nav>
+        </header>
+
+    <main>
+        <section id="staticImage">
+            <img src="/images/mystylishdoggo_staticshopimage.jpg" alt="pic desc" />
+        </section>
+        <section id="circles">
+            <img src="link to circle image" alt="circle1" />
+            <h4>Leashes</h4>
+            <img src="link to circle image" alt="circle2" />
+            <h4>T-Shirts</h4>
+            <img src="link to circle image" alt="circle3" />
+            <h4>Hoodies</h4>
+            <img src="link to circle image" alt="circle4" />
+            <h4>Onesies</h4>
+            <img src="link to circle image" alt="circle5" />
+            <h4>Socks</h4>
+        </section>
+        <section id="filter">
+            <img src="link to image" alt="" />
+            <h4>Filter & Sort</h4>
+        </section>
+        <section id="infoCards">
+            <img src="link to card image" alt="card1" />
+            <dl>
+                <dt>Pink Camo Hoody</dt>
+                <dd>Size:</dd>
+                <dd>Price:</dd>
+            </dl>
+            <img src="link to card image" alt="card2" />
+            <dl>
+                <dt>Grey T-shirt</dt>
+                <dd>Size:</dd>
+                <dd>Price:</dd>
+            </dl>
+            <img src="link to card image" alt="card3" />
+
+            <dl>
+                <dt>Cute Neck Tie</dt>
+                <dd>Size:</dd>
+                <dd>Price:</dd>
+            </dl>
+            <img src="link to card image" alt="card4" />
+
+            <dl>
+                <dt>Cute Neck Tie</dt>
+                <dd>Size:</dd>
+                <dd>Price:</dd>
+            </dl>
+            <img src="link to card image" alt="card5" />
+            <dl>
+                <dt>Cute Neck Tie</dt>
+                <dd>Size:</dd>
+                <dd>Price:</dd>
+            </dl>
+            <img src="link to card image" alt="card6" />
+            <dl>
+                <dt>Cute Neck Tie</dt>
+                <dd>Size:</dd>
+                <dd>Price:</dd>
+            </dl>
+        </section>
+    </main>
+
+    <section id="footer">
+        <footer>
+            <nav id="footerNav">
+                <img src="/css/images/MyStylishDOGGO-logo.png" alt="footLOGO" />
+
         <ul>
             <li><a href=”home page link to”</a></li>
             <li><a href=”about page link to”</a></li>
             <li><a href=”contact page link to”</a></li>
         </ul>
-    </section>
-    <section>
+
         <a class="active" href="#home">Home</a>
         <input type="text" placeholder="Search..">
         <img src="link to IG image" alt="instagram" />
     </section>
     <section>
         <p>&copy; 2023 My Stylish Doggo</p>
+        </nav>
     </section>
-</footer>
-
+    </footer>
+    </container>
 </body>
 
 </html>
