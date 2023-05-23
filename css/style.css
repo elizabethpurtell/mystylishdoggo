@@ -3,9 +3,8 @@
 
 /*
 
-div id - #
-
-div class - *
+class - are for multiple elements
+IDs - are for specific unique elements, use #name
 
 HTML tag - body
 
@@ -14,31 +13,37 @@ HTML tag - body
 body {
   height: auto;
   width: auto;
+  margin: 100px;
   background: rgb(194,250,251);
-  background: linear-gradient(0deg, rgba(194,250,251,1) 0%, rgba(45,253,141,0.7441351540616247) 100%);
+  background: linear-gradient(0deg, rgba(194,250,251,1) 0%, rgba(45,253,141,0.7441351540616247) 50%);
 }
 
 header {
-  display: flex;
-  height: 100;
+  display:flex;
+  padding-bottom: 60px;
+  align-items: center;
+  height: 100px;
   width: 100%;
-  padding-bottom: 20px;
-  align-content: center;
   background-color: white;
 }
 
-#hdlogo {
-  height: auto;
-  align-content: left;
+.hdlogo > img {
+  display: inline-block;
+  max-width: 100px;
+  align-content: right;
+  padding-top: 50px;
+  padding-left: 40px;
+  padding-right: 100px;
 }
 
 #headerNav {
-  display: flex;
+  display:inline-block;
   padding: auto;
   align-content: right;
 }
 
 #headerNav nav ul {
+  display: inline-block;
   list-style-type: none;
   align-content: space-between;
   overflow: hidden;
@@ -50,7 +55,7 @@ header {
 
 #headerNav li a {
   display: block;
-  color: rgb(49, 49, 49);
+  color: #504f4f;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -61,105 +66,127 @@ header {
   background-color: #04f1e5;
 }
 
-#staticImage {
+.staticImage {
   max-width: 100%;
   display: flex;
   align-content: center;
   padding-top: 10px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
+/*
 
-#circles {
-  display: flex;
+*/
+
+.pagelinks {
+  display:inline-block;
+  align-content: center;
+  margin: -20px;
   padding-top: 10px;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
 }
 
-#circles > img {
-  max-width: 100%;
-  align-content:space-around;
+.pagelinks > figure > img { 
+  vertical-align: top;
+  border-style: dashed;
+  border-color: #ffffff;
+  border-radius: 80%;
 }
 
-#circles>figcaption {
-  display: inline;
+.pagelinks > figure > figcaption {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 5%;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #504f4f;
 }
 
-#filter {
+.filter {
   display: flex;
   align-content: right;
 }
 
-#infoCards {
-  display: flex;
-  max-width: fit-content;
-  align-items: flex-start;
-  justify-content: space-between;
+.infocards {
+  display: inline-block;
+  align-content: space-between;
+  margin: 55px;
+  padding-top: 0;
+  padding-bottom: 0; 
 }
 
-#infoCards>figure {
-  max-width: 100%;
-  justify-content: space-between;
+.infocards > figure > img {
+  vertical-align: top;
+  height: 400px;
+  width: auto;
+  border-style:dotted;
+  border-color: rgb(255, 255, 255);
 }
 
-#infoCards2 {
-  display: flex;
-  max-width: fit-content;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-#infoCards2>figure {
-  max-width: 50%;
-  max-height: 50%;
-  justify-content: space-between;
-}
-
-dl {
-  display: block;
+/*
+display:inline-block;
+ position: relative;
+*/
+.infocards > figure > dl {
+  text-align: left;
+  border-style: dotted;
+  border-color: #ffffff;
+  text-transform: capitalize;
   font-family: Arial, Helvetica, sans-serif;
+  color: #504f4f;
+}
+
+.infocards > figure > dl > dt {
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.infocards > figure > dl > dd {
+  margin-left: -2px;
+  text-transform: capitalize;
+  padding: 10px;
 }
 
 footer {
-  display: flex;
-  max-height: 120px;
-  background-color: rgb(255, 255, 255);
+  display:flex;
+  padding-top: 80px;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  background-color: white;
 }
 
-#footerLogo {
-  height: auto;
-  align-content: left;
+.footerlogo > img {
+  display: inline-block;
+  max-width: 100px;
+  align-content: right;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
-#footerNav {
-  display: inline-flex;
-  padding: auto;
+.footernav {
+  display: inline-block;
+  padding-right: 100px;
 }
 
-#footerNav nav ul {
+.footernav nav ul {
   list-style-type: none;
   align-content: space-between;
   overflow: hidden;
 }
 
-#footerNav li a {
-  display: block;
-  color: rgb(49, 49, 49);
-  text-align: center;
-  padding: 14px 16px;
+.footernav > nav > ul > li {
+  vertical-align: top;
+}
+
+.footernav > nav > ul > li > a {
+  display: inline-block;
+  color: #504f4f;
   text-decoration: none;
 }
+/*
 
-#footerNav li {
-  display: inline-block;
+  */
+
+.copyright {
+ display: inline-block;
 }
 
-#copyright {
-  display: inline-block;
-}
