@@ -7,10 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Stylish Doggo</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="app.js"></script>
 </head>
 
 <body>
+    <section>
+        <script> 
+         function validateForm() {
+             let x = document.forms["myForm"]["fname"].value;
+                     if (x == "") {
+                     alert("Name must be filled out");
+                     return false;
+                     } if (x == "great"){
+                     alert("Woohoo! You are having a great day!");
+                     } else if (x == "blah") {
+                     alert("I'm sorry, I hope your day gets better!");
+                     } else if (x == "crummy") {
+                     alert("I'm sorry, I hope your day gets better!");
+                     } else if (x == "sadness") {
+                     alert("I'm sorry, how does a 50% discount sound?");
+                     } else {
+                     alert("Thanks for shopping with My Stylish Doggo!");
+                     }
+           }
 
+     </script>
+ 
+             <h2><p>Tell us how your week has gone ("great, blah, crummy, sadness"):</p></h2>
+
+             <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+             Feeling: <input type="text" name="fname">
+             <input type="submit" value="Submit">
+             </form>
+
+    </section>
+
+    <script src="app.js"></script>
     <header>
         <section class="hdlogo">
             <img src="css/images/MyStylishDOGGO-logo.png" alt="My Stylish Doggo Logo">
@@ -29,7 +61,23 @@
         <section class="staticImage">
             <figure><img src="css/images/mystylishdoggo_staticshopimage.jpg" alt="3 dogs in outfits"></figure>
         </section>
-<br>
+      
+        <section class="timerSale">
+                <h2>You have 30 seconds to GRAB this HOT Deal!</h2>
+
+                <p id="sale"></p>
+
+                <button id="timebutton" onclick="clearInterval(myVar)">Stop time</button>
+
+                <script>
+                let myVar = setInterval(myTimer ,1000);
+                function myTimer() {
+                const d = new Date();
+                document.getElementById("sale").innerHTML = d.toLocaleTimeString();
+                }
+                </script>
+        </section>
+        <br>
         <section class="pagelinks">
             <figure><img href="#" src="css/images/square-images/mystylishdoggo_squareImg.jpg" alt="circle1">
             <figcaption>Leashes</figcaption>
@@ -56,8 +104,8 @@
                 <figcaption>Socks</figcaption>
             </figure>
         </section>
-<br>
-<br>
+        <br>
+        <br>
         <section  class="filter">
             <h4>Filter & Sort</h4>
         </section>
@@ -123,6 +171,15 @@
         </section>
         <br>
         <br>
+        <section>
+   
+            <button id="salebutton" onclick="myFunction()">50% OFF Code</button>
+            <script>
+            function myFunction() {
+              alert("Enter ILUVDOGS23 at checkout for 50% OFF!");
+            }
+            </script>
+        </section>
     </main>
 
     <footer>
