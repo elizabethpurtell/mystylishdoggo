@@ -7,41 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Stylish Doggo</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="app.js"></script>
+    <script src="/app.js"></script>
+
 </head>
 
 <body>
-    <section class="feelingform">
-        <h2><p>Tell us how your week has gone ("great, blah, crummy, sadness"):</p></h2>
+    <header>
 
-        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
-        Feeling:<input type="text" name="fname">
-        <input type="submit" value="Submit">
-        </form>
-        <script> 
-         function validateForm() {
-             let x = document.forms["myForm"]["fname"].value;
-                     if (x == "") {
-                     alert("Feeling must be filled out");
-                     return false;
-                     } if (x == "great"){
-                     alert("Woohoo! You are having a great day!");
-                     } else if (x == "blah") {
-                     alert("I'm sorry, I hope your day gets better!");
-                     } else if (x == "crummy") {
-                     alert("I'm sorry, I hope your day gets better!");
-                     } else if (x == "sadness") {
-                     alert("I'm sorry, how does a 50% discount sound?");
-                     } else {
-                     alert("Thanks for shopping with My Stylish Doggo!");
-                     }
-                     }
+       <script>
+        greetUser();
+        userChoice();
        </script>
 
-    </section>
-
-    <script src="app.js"></script>
-    <header>
         <section class="hdlogo">
             <img src="css/images/MyStylishDOGGO-logo.png" alt="My Stylish Doggo Logo">
         </section>
@@ -59,21 +36,16 @@
         <section class="staticImage">
             <figure><img src="css/images/mystylishdoggo_staticshopimage.jpg" alt="3 dogs in outfits"></figure>
         </section>
-      
-        <section class="timerSale">
-                <h2>You have 30 seconds to GRAB this HOT Deal!</h2>
-
-                <p id="sale"></p>
-
-                <button id="timebutton" onclick="clearInterval(myVar)">Stop time</button>
-
-                <script>
-                let myVar = setInterval(myTimer ,1000);
-                function myTimer() {
-                const d = new Date();
-                document.getElementById("sale").innerHTML = d.toLocaleTimeString();
+       
+        <section class="changeButton">
+          
+            <script>        
+                function changeBackgroundColor(color){
+                document.body.style.background = color;
                 }
-                </script>
+            </script>
+              <button id="bkgrndButton" onclick="changeBackgroundColor('#ffffff')">Change Background Color</button>
+
         </section>
         <br>
         <section class="pagelinks">
@@ -170,34 +142,38 @@
         <br>
         <br>
         <section>
-   
-            <button id="salebutton" onclick="myFunction()">50% OFF Code</button>
+            <button id="salebutton" onclick="saleButton()">50% OFF Code</button>
             <script>
-            function myFunction() {
-              alert("Enter ILUVDOGS23 at checkout for 50% OFF!");
-            }
+              function saleButton() {
+                alert("Enter ILUVDOGS23 at checkout for 50% OFF!");
+              }
             </script>
+            
+         
         </section>
     </main>
 
     <footer>
-
-        <section class="footerlogo">
-            <img src="css/images/MyStylishDOGGO-logo.png"  alt="MyStylishDoggo Logo">
-        </section>
-        <section class="footernav">
-            <nav>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-            </nav>
-        </section>
-      
-            <section class="copyright">
+        <section class="footerBox">
+            <section class="footernav">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="footerlogo">
+                <img src="css/images/MyStylishDOGGO-logo.png"  alt="MyStylishDoggo Logo">
+            </section>
+            <br><br>
+       
+             <section class="copyright">
                 <p>&copy; 2023 My Stylish Doggo</p>
             </section>
+
+        </section>    
     </footer>
 
 </body>
