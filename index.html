@@ -14,25 +14,32 @@
 <body>
     <header>
 
-       <script>
-            greetUser();
-            userChoice();
-       </script>
 
         <section class="hdlogo">
             <img src="css/images/MyStylishDOGGO-logo.png" alt="My Stylish Doggo Logo">
         </section>
-        <nav id="headerNav">
-            <ul>
-                <li><a class="active" href="index.html">HOME</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-                <li><a href="#">SIGN-IN</a></li>
-                <li><a href="#">CART</a></li>
-            </ul>
-        </nav>
+        <section>
+            <nav class="headerNav">
+                <ul>
+                    <li><a class="active" href="index.html">HOME</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="#">SIGN-IN</a></li>
+                    <li><a href="#">CART</a></li>
+                </ul>
+            </nav>
+        </section>
     </header>
 
     <main>
+        <section class="popUpQuestions">
+            <script>
+                greetUser();
+                userChoice();
+                guessDiscount();
+                ratedogCostumes();
+            </script>
+        </section>
+
         <section class="staticImage">
             <figure><img src="css/images/mystylishdoggo_staticshopimage.jpg" alt="3 dogs in outfits"></figure>
         </section>
@@ -167,7 +174,7 @@
             <section class="footerlogo">
                 <img src="css/images/MyStylishDOGGO-logo.png"  alt="MyStylishDoggo Logo">
             </section>
-            <br><br>
+     
        
              <section class="copyright">
                 <p>&copy; 2023 My Stylish Doggo</p>
